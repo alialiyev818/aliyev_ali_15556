@@ -1,0 +1,259 @@
+hr {
+    border-top: 4px dotted #de4f12; /* Dotted style with the original color */
+    width: 100%;
+    height: 0; /* Resetting the height since we're using border-top */
+    background: none; /* Resetting background */
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 20px auto; /* Centers the HR and gives it space above and below */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+}
+
+.blabla {
+
+    text-align: center;
+    
+}
+
+.grow-on-hover {
+
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+
+.grow-on-hover:hover {
+    transform: scale(1.2);
+}
+
+body{
+    background-color: beige;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden; /* Helps to apply the border-radius to table */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styles */
+th {
+    background-color: #de4f12; /* Blue color for headers */
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Table data cell styles */
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* On hover row effect */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Form Container */
+.form-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Input Fields & Textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #de4f12;  /* Change this color if you have a specific theme color */
+    box-shadow: 0 0 8px rgb(255, 255, 255);  /* Color should match the border-color */
+    outline: none;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Buttons */
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #de4f12;  /* Primary button color */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #ff0000;  /* Darken the button color slightly on hover */
+}
+
+input[type="submit"]:active,
+button:active {
+    transform: scale(0.97);  /* Slight "push" effect on click */
+}
+
+/* Base Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #de4f12;  /* Primary button color */
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;  /* Remove underline from anchor tags */
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 10px;  /* Spacing between buttons; can be adjusted or removed */
+}
+
+.btn:hover {
+    background-color: #ff0000;  /* Darken the button color slightly on hover */
+}
+
+.btn:active {
+    transform: scale(0.97);  /* Slight "push" effect on click */
+}
+
+/* If you want to add more styles or adjust the current ones, just update the .btn class */
+
+.modern-hyperlink {
+    color: #de4f12;  /* Primary color for the link */
+    text-decoration: none; /* Removes the default underline */
+    position: relative; /* Needed for the custom underline effect */
+    transition: color 0.3s; /* Smoothens the color transition on hover */
+}
+
+.modern-hyperlink:hover {
+    color: #ff0000; /* Slightly darker color on hover for a subtle effect */
+}
+
+/* Custom underline effect that only appears on hover */
+.modern-hyperlink::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Position of the underline */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ff0000; /* Match the link color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; 
+}
+
+.modern-hyperlink:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Style for the entire <ul> */
+ul.modern-list {
+    font-family: 'Arial', sans-serif;  /* Use a modern font-family */
+    padding-left: 20px;  /* Adjusts spacing from the left; can be increased or decreased */
+    list-style-type: none;  /* Removes default bullets */
+    line-height: 1.5;  /* Better line spacing for readability */
+    margin-bottom: 20px;  /* Spacing below the list */
+}
+
+/* Style for each <li> in the list */
+ul.modern-list li {
+    padding-left: 20px;  /* Space for custom bullet or icon */
+    margin-bottom: 8px;  /* Space between list items */
+    position: relative;  /* Allows precise positioning of the custom bullet */
+}
+
+/* Custom bullet for each list item */
+ul.modern-list li::before {
+    content: '•';  /* Can be replaced with any desired symbol or Unicode character */
+    position: absolute;
+    left: 0;  /* Aligns custom bullet to the left */
+    color: #de4f12;  /* Color of the bullet; can be adjusted */
+    font-size: 1.5em;  /* Size of the bullet */
+    line-height: 0.5;  /* Adjusts vertical alignment of the bullet */
+}
+
+/* If the list contains links, style them */
+ul.modern-list li a {
+    text-decoration: none;  /* Removes underline from links */
+    color: #000000;  /* Link color; can be adjusted */
+    transition: color 0.3s;  /* Smoothens color transition on hover */
+}
+
+.modern-text {
+    font-family: 'Arial', sans-serif;  /* Modern, readable font. Consider alternatives like 'Roboto' or 'Helvetica'. */
+    font-size: 1.4rem;  /* Adjust based on your design's typography scale. */
+    line-height: 1.3;  /* Enhances readability. */
+    /* Constrain width for better line length. */
+     /* Vertical spacing before and after the paragraph. */
+    color: #000000;  /* Neutral, readable color. */
+}   
+
+/* Base styles for all heading levels */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; /* Modern, readable font. Alternatives include 'Roboto', 'Helvetica', etc. */
+    color: #333;  /* Neutral color. */
+    margin-top: 20px; /* Space above the heading. */
+    margin-bottom: 10px; /* Space below the heading. */
+    font-weight: 600; /* Bold weight for prominence. */
+    line-height: 1.3; /* Improved readability. */
+}
+
+h1 {
+    font-size: 2.5rem;  /* Large size for primary headings. */
+}
+
+h2 {
+    font-size: 2rem;  /* Slightly smaller than h1. */
+}
+
+h3 {
+    font-size: 1.75rem;  /* Progressively reducing the size. */
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;  /* Size similar to the main body text but still stands out due to bold weight. */
+}
