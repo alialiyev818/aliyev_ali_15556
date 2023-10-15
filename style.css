@@ -58,7 +58,11 @@ tr:hover {
     margin: 20px auto;
 }
 
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #e0e0e0;
@@ -68,7 +72,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea, selec
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
     border-color: #de4f12;
     box-shadow: 0 0 8px #ffffff;
     outline: none;
@@ -80,7 +88,9 @@ label {
     font-weight: 500;
 }
 
-input[type="submit"], button, .btn {
+input[type="submit"],
+button,
+.btn {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -91,11 +101,15 @@ input[type="submit"], button, .btn {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-input[type="submit"]:hover, button:hover, .btn:hover {
+input[type="submit"]:hover,
+button:hover,
+.btn:hover {
     background-color: #ff0000;
 }
 
-input[type="submit"]:active, button:active, .btn:active {
+input[type="submit"]:active,
+button:active,
+.btn:active {
     transform: scale(0.97);
 }
 
@@ -163,7 +177,13 @@ ul.modern-list li a {
     transition: color 0.3s;
 }
 
-.modern-text, h1, h2, h3, h4, h5, h6 {
+.modern-text,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Arial', sans-serif;
     line-height: 1.3;
     color: #000000;
@@ -173,16 +193,73 @@ ul.modern-list li a {
     font-size: 1.4rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #333;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
